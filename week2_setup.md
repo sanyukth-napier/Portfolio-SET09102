@@ -61,7 +61,7 @@ You are done!
 
 As for reflection, the whole process of week2 was pretty simple and I did not have any difficulties setting up the environment
 
-##Alternative Configurations
+## Alternative Configurations
 
 There are alternate platfrom to use instead of Github like GitBucket, LaunchPad, Gittea etc but Github is the most widely used one and most widely kown one.
 
