@@ -49,10 +49,10 @@ on the bottom right hand corner. This will install MAUI for us
 
 To do this you need to have both Visual studio and your repository on Github open. 
 First go to your repository on Github
-![CloneLink](images/Clone1.jpg)
+![CloneLink](images/clone1.jpg)
 Then click on "<> Code", you will get a drop down where you can copy the https link, copy the link and the go to Visual Studio and click on "Clone Repository".
 Then this window will open.
-![CloneRepo](images/Clone2.jpg)
+![CloneRepo](images/clone2.jpg)
 Here you want to paste the copied link in the highlighted box and then select where you want to store it locally.
 The click "Clone" in the bottom right hand corner.
 You are done!
