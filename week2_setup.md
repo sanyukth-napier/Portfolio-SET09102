@@ -8,7 +8,7 @@ as the IDE. GitHub wil be used as the version control system
 To create a working repository in Github we have to first make a account on Github. We only need a working email address and a secure passoword and a username for a new account.
 You can signup by clicking on this link  http://www.github.com/signup.
 
-After creating a new account, the next thing to do is to make a new repository. Click on the "+" at hte top right to open the setup window.
+After creating a new account, the next thing to do is to make a new repository. Click on the "+" at the top right to open the setup window.
 Refer to the image below to see how to set up the repository.
 
 ![GitHubMain](images/GitHub_setup.jpg)
@@ -17,6 +17,16 @@ Refer to the image below to see how to set up the repository.
 3. Tick this the box to add a readme file
 
 The click on the "Create repository" button at the bottom right 
+
+All created repositories can be seen in the homepage of github, https://github.com/"yourGithubUsername", in the top left part of the page.
+
+To created a shared repository you need to add collaborators to the repository you just made. Open your repository by clicking on it in the repository section.
+![GithubCollaborator](images/collaborators_github.jpg)
+1. Click on the settings page once you are in your repository main page
+2. Then click on Collaborators
+3. After that at the bottom you have to click on the green button "Add people"
+
+You can add them using the email address the used to make the github account, it goes without saying that they need a Github account in the firt place.
 
 ## Reflection
 
