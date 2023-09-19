@@ -45,7 +45,7 @@ After the download is completed, open the downloaded file and then complete the 
 Then you will be prompted with a screeen to download optional components of the IDE, here you want to tick the box next to ".NET MULTI-platform App UI development" and then click on install
 on the bottom right hand corner. This will install MAUI for us
 
-##Cloning the shared Repository
+## Cloning the shared Repository
 
 To do this you need to have both Visual studio and your repository on Github open. 
 First go to your repository on Github
