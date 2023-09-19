@@ -30,6 +30,7 @@ You can add them using the email address the used to make the github account, it
 
 
 ##Setting up Github Taskboard
+
 To setup up a github task board we need to create a new project in Github.
 ![Project](images/project.jpg)
 To create on click on project then the drop down box and then click on "New Project". And then click on the green button which says "New Project". You will the be propted with this screen.
@@ -37,7 +38,24 @@ To create on click on project then the drop down box and then click on "New Proj
 Here on the left hand side click on "Board" then name your project and then click on the green "Create" button.
 You will then be shown of the created Task board!
 
+##Microsoft Visual Studio Setup
 
+Download the latest version of Visual Studio by going to this link, https://visualstudio.microsoft.com/vs/. Get the community version.
+After the download is completed, open the downloaded file and then complete the installation process.
+Then you will be prompted with a screeen to download optional components of the IDE, here you want to tick the box next to ".NET MULTI-platform App UI development" and then click on install
+on the bottom right hand corner. This will install MAUI for us
+
+##Cloning the shared Repository
+
+To do this you need to have both Visual studio and your repository on Github open. 
+First go to your repository on Github
+![CloneLink](images/Clone1.jpg)
+Then click on "<> Code", you will get a drop down where you can copy the https link, copy the link and the go to Visual Studio and click on "Clone Repository".
+Then this window will open.
+![CloneRepo](images/Clone2.jpg)
+Here you want to paste the copied link in the highlighted box and then select where you want to store it locally.
+The click "Clone" in the bottom right hand corner.
+You are done!
 ## Reflection
 
 
