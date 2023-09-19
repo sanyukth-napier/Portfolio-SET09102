@@ -56,6 +56,15 @@ Then this window will open.
 Here you want to paste the copied link in the highlighted box and then select where you want to store it locally.
 The click "Clone" in the bottom right hand corner.
 You are done!
+
 ## Reflection
+
+As for reflection, the whole process of week2 was pretty simple and I did not have any difficulties setting up the environment
+
+##Alternative Configurations
+
+There are alternate platfrom to use instead of Github like GitBucket, LaunchPad, Gittea etc but Github is the most widely used one and most widely kown one.
+
+In the case od IDE's, Eclipse was also an option instead of Visual Studio but it is more known for Java development and not suitable for smaller projects like what we are doing.
 
 
