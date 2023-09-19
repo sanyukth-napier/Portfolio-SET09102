@@ -21,7 +21,7 @@ The click on the "Create repository" button at the bottom right
 All created repositories can be seen in the homepage of github, https://github.com/"yourGithubUsername", in the top left part of the page.
 
 To created a shared repository you need to add collaborators to the repository you just made. Open your repository by clicking on it in the repository section.
-![GithubCollaborator](images/collaborators_github.jpg)
+![GithubCollaborator](images/colloaborators_github.jpg)
 1. Click on the settings page once you are in your repository main page
 2. Then click on Collaborators
 3. After that at the bottom you have to click on the green button "Add people"
