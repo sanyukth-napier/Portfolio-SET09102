@@ -28,6 +28,16 @@ To created a shared repository you need to add collaborators to the repository y
 
 You can add them using the email address the used to make the github account, it goes without saying that they need a Github account in the firt place.
 
+
+##Setting up Github Taskboard
+To setup up a github task board we need to create a new project in Github.
+![Project](images/project.jpg)
+To create on click on project then the drop down box and then click on "New Project". And then click on the green button which says "New Project". You will the be propted with this screen.
+![Board](images/BoardPage.jpg)
+Here on the left hand side click on "Board" then name your project and then click on the green "Create" button.
+You will then be shown of the created Task board!
+
+
 ## Reflection
 
 
