@@ -23,3 +23,89 @@ code review challenges. For your portfolio, do the following:
 
 * Include multiple examples. Make the decision about which example shows your best
   work and use that one.
+* 
+
+```
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        // create a new invoice
+        var invoice = new Invoice
+        {
+            InvoiceNo = 1,
+            Customer = "John Doe",
+            IssuedDate = new DateOnly(2023, 4, 1),
+            Description = "Website Design",
+            Amount = 1000,
+            Tax = Amount * CURRENT_TAX_RATE
+        };
+
+        invoice.Save();
+
+    }
+}
+
+```
+
+## Problems
+The code violates C# coding conventions.There is an undefined variable, The code attempts to calculate the tax using Amount * CURRENT_TAX_RATE, but there's no declaration 
+or initialization of the Amount variable. The 'invoice.Amount' needs to be used  to access the 'Amount' property of the invoice object. The code is also missing class definitions. 
+The code uses the Invoice class, but the definition of the Invoice class is not provided in the code snippet. The 'Save' method is also not defined is this code snippet. 
+To follow standard conventions, the class should be defined with appropriate properties and methods.
+
+## Improved Code
+
+```
+
+using System;
+
+class Invoice
+{
+    // Properties of the Invoice class
+    public int InvoiceNo { get; set; }        // Invoice number
+    public string Customer { get; set; }      // Customer name
+    public DateOnly IssuedDate { get; set; }  // Date when the invoice is issued
+    public string Description { get; set; }   // Description of the invoice
+    public decimal Amount { get; set; }       // Total invoice amount
+    public decimal Tax { get; set; }          // Tax amount on the invoice
+
+    // Method to save the invoice
+    public void Save()
+    {
+        // Implementation to save the invoice
+        Console.WriteLine($"Invoice {InvoiceNo} saved for {Customer}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create a new invoice
+        var invoice = new Invoice
+        {
+            InvoiceNo = 1,                                        // Set invoice number
+            Customer = "John Doe",                                // Set customer name
+            IssuedDate = new DateOnly(2023, 4, 1),                // Set issuance date
+            Description = "Website Design",                       // Set invoice description
+            Amount = 1000,                                       // Set invoice amount
+            
+            // Calculate tax based on the invoice amount and current tax rate
+            Tax = invoice.Amount * GetCurrentTaxRate()
+        };
+
+        // Call the Save method to save the invoice
+        invoice.Save();
+    }
+
+    // Method to get the current tax rate (replace with actual logic)
+    static decimal GetCurrentTaxRate()
+    {
+        // Implement logic to get the current tax rate
+        return 0.1m; // Example: 10% tax rate
+    }
+}
+
+ ```    
