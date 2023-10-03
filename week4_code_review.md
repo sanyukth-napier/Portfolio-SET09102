@@ -1,30 +1,4 @@
-# Code review
-
-This section documents your practical work from week 4 in which you attempt a series of 
-code review challenges. For your portfolio, do the following:
-
-1. Choose the code review challenge which best demonstrates your skills.
-2. Copy the code into your portfolio using a Markdown
-   [fenced code block](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks).
-3. Provide some descriptive commentary that identifies the problems.
-4. Show your improved version of the code in a second code block.
-5. Explain in one or more paragraphs why your solution is a good one.
-
-**DO**
-
-* Use grammatically correct sentences and paragraphs for your commentary.
-* Make clear reference to the code in your commentary. GitHub Markdown does not support
-  line numbers and so you need to make sure that the reader knows which line you are
-  referring to from your description.
-* Refer to recognised principles or rules when describing your solution. "I thought it
-  would be better that way" is not sufficient: you need to have specific reasons.
-
-**DON'T**
-
-* Include multiple examples. Make the decision about which example shows your best
-  work and use that one.
-* 
-
+# Code revie
 ```
 
 class Program
@@ -64,12 +38,12 @@ using System;
 class Invoice
 {
     // Properties of the Invoice class
-    public int InvoiceNo { get; set; }        // Invoice number
-    public string Customer { get; set; }      // Customer name
-    public DateOnly IssuedDate { get; set; }  // Date when the invoice is issued
-    public string Description { get; set; }   // Description of the invoice
-    public decimal Amount { get; set; }       // Total invoice amount
-    public decimal Tax { get; set; }          // Tax amount on the invoice
+    private int InvoiceNo { get; set; }        // Invoice number
+    private string Customer { get; set; }      // Customer name
+    private DateOnly IssuedDate { get; set; }  // Date when the invoice is issued
+    private string Description { get; set; }   // Description of the invoice
+    private decimal Amount { get; set; }       // Total invoice amount
+    private decimal Tax { get; set; }          // Tax amount on the invoice
 
     // Method to save the invoice
     public void Save()
@@ -109,3 +83,17 @@ class Program
 }
 
  ```    
+
+ ## Changes made and why solution is good
+ 1. Error Correction: In the improved solution, the undeclared and uninitialized Amount variable is correctly accessed as invoice.Amount.
+    Also, the CURRENT_TAX_RATE issue has been addressed by using the GetCurrentTaxRate method.
+ 2. Comments: The improved solution includes comments that explain the purpose and functionality of various parts of the code, 
+    making it easier for developers to understand what the code is doing and why.
+ 3. Separation of Concerns: The improved solution separates concerns by defining a GetCurrentTaxRate method to calculate the tax rate. 
+    This promotes a cleaner, more modular code structure. In contrast, the original code attempted to calculate the tax directly within the object initializer, 
+    which can lead to less maintainable and harder-to-read code.
+ 4. Readability and Maintainability: The improved solution uses meaningful property names such as InvoiceNo, Customer, IssuedDate, etc., 
+    and these properties are also commented to explain their purpose. This makes the code more readable and easier to understand for anyone reviewing or maintaining it.
+ 5. Encapsulation: The Invoice class encapsulates its properties, which means that they are private fields accessed through public properties. 
+    This encapsulation allows for better control over the class's internal state and provides flexibility for adding validation or logic in the future 
+    without affecting external code that uses the class.
