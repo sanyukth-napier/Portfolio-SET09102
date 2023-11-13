@@ -51,9 +51,13 @@ private async void AddNewPlace_Clicked(object sender, EventArgs e)
 ```
 # Explanation for the important lines of code
 1.await DisplayPromptAsync("Add New Place", "Enter the place name:");: This line presents a prompt to the user, allowing them to enter the name of the new place. The entered value is stored in the placeName variable.
+
 2.await DisplayActionSheet("Select Status", "Cancel", null, "Open", "Closed", "In Progress");: This line displays an action sheet with options for selecting the status of the new place (Open, Closed, In Progress)
+
 3.int.TryParse(personnelRequiredString, out int personnelRequired): This line attempts to parse the entered personnelRequiredString as an integer. If successful, the parsed value is stored in the personnelRequired variable.
+
 4.placesList.Add(new PlaceStatus { ... });: This line creates a new PlaceStatus object with the gathered information (place name, status, disaster, personnel required, and assistance type) and adds it to the placesList collection.
+
 5.Error Handling: Throughout the method, there are checks to ensure that the user provides valid input. If there are issues (e.g., the user cancels an action or enters invalid data), 
   appropriate messages are displayed to the user using DisplayAlert.
 
@@ -124,10 +128,15 @@ private async void AddNewPlace_Clicked(object sender, EventArgs e)
 ```
 # Explanation 
 1.Get Selected Item: var selectedPlace = (PlaceStatus)e.SelectedItem; retrieves the PlaceStatus object that corresponds to the selected item in the ListView.
+
 2.Edit Place Name: var updatedPlaceName = await DisplayPromptAsync(...); prompts the user to enter the updated place name. The initial value is set to the current place name.
+
 3.Edit Status: var updatedStatus = await DisplayActionSheet(...); prompts the user to select an updated status from an action sheet.
+
 4.Update Selected PlaceStatus: The selected PlaceStatus item is updated with the new information obtained from the user.
+
 5.Notify ListView Update: UpdateListView() is called to notify the ListView about the changes and refresh its display.
+
 
 # UpdateListView() method
 ```
@@ -140,15 +149,15 @@ private void UpdateListView()
 ```
 # Screenshot of each field
 
-![CloneLink](status/status.jpg)
-![CloneLink](disaster/disaster.jpg)
-![CloneLink](personnel/personnel.jpg)
-![CloneLink](assistance/assistance.jpg)
+![status](status/status.jpg)
+![disaster](disaster/disaster.jpg)
+![personnel](personnel/personnel.jpg)
+![assistance](assistance/assistance.jpg)
 
 # Personnel Required field only accepting numbers
 
-![CloneLink](invalid/invalid.jpg)
+![invalid](invalid/invalid.jpg)
 
 # The final view map page 
 
-![CloneLink](final/finial.jpg)
+![final](final/finial.jpg)
