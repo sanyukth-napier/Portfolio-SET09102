@@ -149,15 +149,15 @@ private void UpdateListView()
 ```
 # Screenshot of each field
 
-![status](status/status.jpg)
-![disaster](disaster/disaster.jpg)
-![personnel](personnel/personnel.jpg)
-![assistance](assistance/assistance.jpg)
+![status](images/status.jpg)
+![disaster](images/disaster.jpg)
+![personnel](images/personnel.jpg)
+![assistance](images/assistance.jpg)
 
 # Personnel Required field only accepting numbers
 
-![invalid](invalid/invalid.jpg)
+![invalid](images/invalid.jpg)
 
 # The final view map page 
 
-![final](final/finial.jpg)
+![final](images/finial.jpg)
