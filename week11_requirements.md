@@ -21,7 +21,8 @@ As an UNDAC Deputy Team Leader I want to view details of all team partners so th
 
 # The data
 For this week I pre-defining the data(name and contact information) and then later changing it to a database implementation. This is the data I predefined 
-```private Dictionary<string, string> contacts = new Dictionary<string, string>
+```
+private Dictionary<string, string> contacts = new Dictionary<string, string>
         {
             { "John", "+1234567890" },
             { "Alice", "+1987654321" },
