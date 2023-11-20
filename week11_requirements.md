@@ -5,8 +5,11 @@ As an UNDAC Deputy Team Leader I want to view details of all team partners so th
 
 # Fuctions I want to implement
 1)Having a database that stores just the contact information of the team patners (maybe also the status and where they are)
+
 2)Being able to search for a specific patner
+
 3)At first only name being displayed and the info being displayed if you click on name or any other action
+
 4)Being able to add new team patner with relevant infromation
 
 # Creating the button 
@@ -67,12 +70,15 @@ We first iterate through each key-value pair in the contacts dictionary and for 
 tapGestureRecognizer.Tapped += (sender, e) => { ... }
 ```
 This line defines what happens when the label is tapped. It attaches an event handler to the Tapped event of the gesture recognizer.
+
 Inside the event handler, var selectedLabel = (Label)sender; retrieves the label that triggered the tap event.
+
 Then the DisplayPhoneNumber(selectedLabel) method is used to show the phone number by passing the selected(clicked) label as the argument.
 ```
 label.GestureRecognizers.Add(tapGestureRecognizer);
 ```
 This way the TapGestureRecognizer associates with the label, enabling the label to respond to tap events.
+
 Then at the end the newly created label (with its tap gesture recognizer attached) is added as a child to the MainStackLayout. This layout serves as a container for all the labels, arranging them vertically as they're added.
 
 # Screenshots of the program 
