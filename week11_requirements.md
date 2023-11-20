@@ -17,7 +17,7 @@ As an UNDAC Deputy Team Leader I want to view details of all team partners so th
 
 # Onclick Event Handler and creating a new file for the window
 ![page](images/page1.jpg)
-![onClick](images/OnClick.jpg)
+![onClick](images/onClick.jpg)
 
 # The data
 For this week I pre-defining the data(name and contact information) and then later changing it to a database implementation. This is the data I predefined 
