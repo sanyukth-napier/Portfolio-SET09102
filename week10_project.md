@@ -5,13 +5,20 @@ This Week I am continuing the task I was doing last week. I added new parameters
 # Added new parameteres - "Disaster", "Personnel Required", "Assistance type"
 
 <> Disaster - this parameter is for the type of disaster that the place was affected by (eg:Floods, Famine etc)
+
 <> Personnel Required - this is an parameter which only accepts numbers (int) and is to show the number of personnel required for the issue at hand
+
 <> Assistance type - this is for the type of humanitarian service needed. This field contains a drop down box with the options : "food", "shelter", "medical", "food and shelter", "food and medical", "shelter and medical" and "All"
 
 # The update event handler for "add place"
 
 ```
-private async void AddNewPlace_Clicked(object sender, EventArgs e)
+        /// <summary>
+        /// Event handler for adding a new place with various details such as status, disaster, personnel required, and assistance type.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The event arguments.</param>
+        private async void AddNewPlace_Clicked(object sender, EventArgs e)
         {
             // Get place name, status, disaster, personnel required, and assistance type from the user
             var placeName = await DisplayPromptAsync("Add New Place", "Enter the place name:");
@@ -48,6 +55,40 @@ private async void AddNewPlace_Clicked(object sender, EventArgs e)
                 }
             }
         }
+    }
+
+    /// <summary>
+    /// Represents the status of a place including disaster details, personnel required, and assistance type.
+    /// </summary>
+    public class PlaceStatus
+    {
+        /// <summary>
+        /// Gets or sets the name of the place.
+        /// </summary>
+        public string PlaceName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status of the place.
+        /// </summary>
+        public string Status { get; set; }
+
+        /// <summary>
+        /// Gets or sets the disaster related to the place.
+        /// </summary>
+        public string Disaster { get; set; }
+
+        /// <summary>
+        /// Gets or sets the number of personnel required at the place.
+        /// </summary>
+        public int PersonnelRequired { get; set; }
+
+        /// <summary>
+        /// Gets or sets the type of assistance needed at the place.
+        /// </summary>
+        public string AssistanceType { get; set; }
+    }
+}
+
 ```
 # Explanation for the important lines of code
 1.await DisplayPromptAsync("Add New Place", "Enter the place name:");: This line presents a prompt to the user, allowing them to enter the name of the new place. The entered value is stored in the placeName variable.
@@ -64,7 +105,12 @@ private async void AddNewPlace_Clicked(object sender, EventArgs e)
 # Having an "OnItemSelected" event handler when a item from the list view is selected to let the user edit its contents
 
 ```
- private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+ /// <summary>
+        /// Event handler for handling the selection of an item in the ListView to edit place details.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The event arguments.</param>
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem == null)
                 return;
@@ -124,6 +170,19 @@ private async void AddNewPlace_Clicked(object sender, EventArgs e)
                 }
             }
         }
+        
+        /// <summary>
+        /// Updates the ListView after modifying place details.
+        /// </summary>
+        private void UpdateListView()
+        {
+            // Code to update the ListView after modifying place details
+            // For example, you might need to refresh the ListView's ItemSource
+            // or notify the adapter about the changes made.
+        }
+    }
+    
+}
 
 ```
 # Explanation 
