@@ -11,6 +11,7 @@ https://github.com/wardliii/Green-Team/issues/60
 
 # Added User stories
 "As an UNDAC Team Leader see information of the area I select"
+
 "As an UNDAC Team Leader I want to edit the the information about the map"
 
 # Definition of Done Checklist 
