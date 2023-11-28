@@ -20,15 +20,6 @@ As an UNDAC Deputy Team Leader I want to view details of all team partners so th
 - Be able to edit existing information by clicking on it [ Time required - 20mins ]
 
 
-# Fuctions I want to implement
-1)Having a database that stores just the contact information of the team patners (maybe also the status and where they are)
-
-2)Being able to search for a specific patner
-
-3)At first only name being displayed and the info being displayed if you click on name or any other action
-
-4)Being able to add new team patner with relevant infromation
-
 # Creating the button 
 ![buttonMake](images/buttonMake.jpg)
 
