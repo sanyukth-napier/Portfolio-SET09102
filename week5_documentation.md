@@ -17,7 +17,9 @@ for comments by adhering to the principles of clean code.
  
  ## Rules of clean code 
  1) KISS - Which stands from keep it simple stupid. It is a rule in clean coding that suggests that code should be as simple as possible. It encourages programmers to avoid unnecessary complexity 
-	       and make their code straightforward and easy to understand. In essence, it promotes simplicity over unnecessary complexity.
+	       and make their code straightforward and easy to understand. In essence, it promotes simplicity over unnecessary complexity.Increase readability as code simple code is easier to read and understand.As there are few layers
+		   of complexity the code is more acessible to other developers. Redused complexity often leads to lesser bugs. Easier to maintain as simple codebase enable faster modification and easier bug fixes.
+		   Performance is also optimized as unnessary complexity is avoided. So code can be optimized effectively for performance. Results in faster excution.
 
  2) DRY - DRY, or "Don't Repeat Yourself," is a clean code principle that advises programmers to avoid duplicating code. Instead of writing the same logic or functionality in multiple places, 
           DRY encourages reusing code through functions, classes, or other abstractions. This reduces redundancy, makes code easier to maintain, and helps ensure consistency throughout a codebase.
