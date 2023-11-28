@@ -18,13 +18,18 @@ https://github.com/wardliii/Green-Team/issues/60
 - Creating a viewMap button on the main page [ Time required - 10mins]
 - Creating the viewMap page [ Time required - 10mins]
 - Being able to add place [ Time required - 1 day]
+
     . Place name
+  
     . Status
+  
     . Personnel required 
+
     . Selecting assistance type
+  
 - Error check for Personnel required to only accept numerical [ Time required - 30mins ]
-- Each Place and it's informtaion should be able to be edidted
-- Should be aple to add new place to the list
+- Each Place and it's informtaion should be able to be edited [ Time required - 2 hours ]
+- Should be able to add new place(plus all its information) to the list [ Time required - 2 hours ]
 
 # Creating the button the view map
 
