@@ -3,6 +3,23 @@
 ## The issue for this week
 As an UNDAC Deputy Team Leader I want to view details of all team partners so that I can contact them immediately 
 
+# User stories
+"As an UNDAC Deputy Team Leader I want to add additonal team patners"
+
+"As An UNDAC Deputy Team leader I want to edit contact details of existing team patners"
+
+# DoD  ( definition of done )
+- Create the ContactInformation button on main page ( and the OnClicked method) [ Time required - 20mins ]
+
+- Create the ContactInformation main page [ Time required - 10mins ]
+
+- Create a Database to store team patners and their contact information [ Time required - 2 hours ]
+
+- Be able to add new team patner a the required information [ Time required - 30mins ]
+
+- Be able to edit existing information by clicking on it [ Time required - 20mins ]
+
+
 # Fuctions I want to implement
 1)Having a database that stores just the contact information of the team patners (maybe also the status and where they are)
 
@@ -43,27 +60,30 @@ The inital idea for this was to make the "name" label a toggle so that on each c
 and opening "window" displaying all the information as this reduses screen clutter (unlike the original idea) and can show lot more information ( more ways of contacting and other traits).
 ```
 foreach (var contact in contacts)
-            {
-                var label = new Label
-                {
-                    Text = contact.Key,
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                    FontSize = 20,
-                    Margin = new Thickness(0, 10)
-                };
+{
+    // Create a label to display the contact key
+    var label = new Label
+    {
+        Text = contact.Key,
+        VerticalOptions = LayoutOptions.CenterAndExpand,
+        HorizontalOptions = LayoutOptions.CenterAndExpand,
+        FontSize = 20,
+        Margin = new Thickness(0, 10)
+    };
 
-                // Add tap gesture recognizer to each label
-                var tapGestureRecognizer = new TapGestureRecognizer();
-                tapGestureRecognizer.Tapped += (sender, e) =>
-                {
-                    var selectedLabel = (Label)sender;
-                    DisplayPhoneNumber(selectedLabel);
-                };
-                label.GestureRecognizers.Add(tapGestureRecognizer);
+    // Add tap gesture recognizer to each label
+    var tapGestureRecognizer = new TapGestureRecognizer();
+    tapGestureRecognizer.Tapped += (sender, e) =>
+    {
+        var selectedLabel = (Label)sender;
+        DisplayPhoneNumber(selectedLabel);
+    };
+    label.GestureRecognizers.Add(tapGestureRecognizer);
 
-                MainStackLayout.Children.Add(label);
-            }
+    // Add the label to the MainStackLayout
+    MainStackLayout.Children.Add(label);
+}
+
 ```
 We first iterate through each key-value pair in the contacts dictionary and for each contact we create a new label with various properties.
 
