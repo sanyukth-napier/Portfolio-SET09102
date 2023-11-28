@@ -9,6 +9,22 @@
 https://github.com/wardliii/Green-Team/issues/60
 "As an UNDAC Team Leader I want to view an overall status map of the area so that I can react to changing events"
 
+# Added User stories
+"As an UNDAC Team Leader see information of the area I select"
+"As an UNDAC Team Leader I want to edit the the information about the map"
+
+# Definition of Done Checklist 
+- Creating a viewMap button on the main page [ Time required - 10mins]
+- Creating the viewMap page [ Time required - 10mins]
+- Being able to add place [ Time required - 1 day]
+    . Place name
+    . Status
+    . Personnel required 
+    . Selecting assistance type
+- Error check for Personnel required to only accept numerical [ Time required - 30mins ]
+- Each Place and it's informtaion should be able to be edidted
+- Should be aple to add new place to the list
+
 # Creating the button the view map
 
 ```
@@ -96,16 +112,27 @@ using System.Collections.ObjectModel;
 
 namespace UNDAC_App.Views
 {
+    /// <summary>
+    /// Represents a page for viewing a map with a list of places and their statuses.
+    /// </summary>
     public partial class ViewMapPage : ContentPage
     {
         private ObservableCollection<PlaceStatus> placesList = new ObservableCollection<PlaceStatus>();
 
+        /// <summary>
+        /// Initializes a new instance of the ViewMapPage class.
+        /// </summary>
         public ViewMapPage()
         {
             InitializeComponent();
             PlacesListView.ItemsSource = placesList;
         }
 
+        /// <summary>
+        /// Event handler for the button click to add a new place and status.
+        /// </summary>
+        /// <param name="sender">The object that raised the event.</param>
+        /// <param name="e">The event arguments.</param>
         private async void AddNewPlace_Clicked(object sender, EventArgs e)
         {
             // Get place name and status from the user
@@ -122,9 +149,19 @@ namespace UNDAC_App.Views
         }
     }
 
+    /// <summary>
+    /// Represents the status of a place.
+    /// </summary>
     public class PlaceStatus
     {
+        /// <summary>
+        /// Gets or sets the name of the place.
+        /// </summary>
         public string PlaceName { get; set; }
+
+        /// <summary>
+        /// Gets or sets the status of the place.
+        /// </summary>
         public string Status { get; set; }
     }
 }
